@@ -26,7 +26,7 @@ public class Game {
 	 * @param hand2
 	 * @return result
 	 */
-	public static Result jokenpo(Hand hand1, Hand hand2) {
+	public static Result rockPaperScissors(Hand hand1, Hand hand2) {
 		if (hand1.getWeight() - hand2.getWeight() == 0){
 			return Result.DRAW;
 		} else if (hand1.getWeight() - hand2.getWeight() == 2 || 

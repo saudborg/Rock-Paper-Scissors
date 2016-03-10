@@ -7,7 +7,9 @@ import java.util.Random;
 
 public enum Hand {
 
-	SCISSOR(1), PAPER(2), ROCK(3);
+	SCISSOR(1), //
+	PAPER(2), //
+	ROCK(3);
 
 	private int weight;
 

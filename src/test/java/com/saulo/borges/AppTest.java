@@ -6,85 +6,85 @@ import static org.junit.Assert.assertEquals;
 
 public class AppTest  {
 
-	// Jogo 1 Pedra x Pedra
+	// Game 1 Rock x Rock
 	@Test
 	public void game1(){
 		Hand hand1 = Hand.ROCK;
 		Hand hand2 = Hand.ROCK;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.DRAW, result);
 	}
 	
-	// Jogo 2 Pedra x Papel
+	// Game 2 Rock x Paper
 	public void game2(){
 		Hand hand1 = Hand.ROCK;
 		Hand hand2 = Hand.PAPER;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.PLAYER2_HAS_WON, result);
 	}
 
-	// Jogo 3 Pedra x Tesoura
+	// Game 3 Rock x Scissor
 	public void game3(){
 		Hand hand1 = Hand.ROCK;
 		Hand hand2 = Hand.SCISSOR;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.PLAYER1_HAS_WON, result);
 	}
 	
-	// Jogo 4 Papel x Pedra
+	// Game 4 Paper x Rock
 	public void game4(){
 		Hand hand1 = Hand.PAPER;
 		Hand hand2 = Hand.ROCK;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.PLAYER1_HAS_WON, result);
 	}
 	
-	// Jogo 5 Papel x Papel
+	// Game 5 Paper x Paper
 	public void game5(){
 		Hand hand1 = Hand.PAPER;
 		Hand hand2 = Hand.PAPER;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.DRAW, result);
 	}
 	
-	// Jogo 6 Papel x Tesoura
+	// Game 6 Paper x Scissor
 	public void game6(){
 		Hand hand1 = Hand.PAPER;
 		Hand hand2 = Hand.SCISSOR;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.PLAYER2_HAS_WON, result);
 	}
 	
-	// Jogo 7 Tesoura x Pedra
+	// Game 7 Scissor x Rock
 	public void game7(){
 		Hand hand1 = Hand.SCISSOR;
 		Hand hand2 = Hand.ROCK;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.PLAYER2_HAS_WON, result);
 	}
 	
-	// Jogo 8 Tesoura x Papel
+	// Game 8 Scissor x Paper
 	public void game8(){
 		Hand hand1 = Hand.SCISSOR;
 		Hand hand2 = Hand.PAPER;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.PLAYER1_HAS_WON, result);
 	}
 	
-	// Jogo 9 Tesoura x Tesoura
+	// Game 9 Scissor x Scissor
 	public void game9(){
 		Hand hand1 = Hand.SCISSOR;
 		Hand hand2 = Hand.SCISSOR;
 		
-		Result result = Game.jokenpo(hand1, hand2);
+		Result result = Game.rockPaperScissors(hand1, hand2);
 		assertEquals(Result.DRAW, result);
 	}
 

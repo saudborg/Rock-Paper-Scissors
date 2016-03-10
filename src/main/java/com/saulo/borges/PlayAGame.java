@@ -2,25 +2,25 @@ package com.saulo.borges;
 
 public class PlayAGame {
 
-	private static final Integer NUM_INTERATION = 100;
+	private static final Integer NUM_ITERATIONS = 100;
 
 	public static void main(String[] args) {
 		
-		StringBuffer interactions = new StringBuffer();
-		interactions.append("\n\nInteractions...");
+		StringBuffer iterations = new StringBuffer();
+		iterations.append("\n\nIterations...");
 
 		int player1Won = 0;
 		int draw = 0;
 		int player2Won = 0;
 
-		for (int i = 0; i < NUM_INTERATION; i++) {
+		for (int i = 0; i < NUM_ITERATIONS; i++) {
 
 			Hand hand1 = Hand.getARandomHand();
 			Hand hand2 = Hand.ROCK;
 			
-			Result result = Game.jokenpo(hand1, hand2);
+			Result result = Game.rockPaperScissors(hand1, hand2);
 
-			interactions.append("\nGame " + i + "\t: Hand 1 [" + hand1 + "] \tx Hand 2 [" + hand2 + "] => \tResult: " + result);
+			iterations.append("\nGame " + i + "\t: Hand 1 [" + hand1 + "] \tx Hand 2 [" + hand2 + "] => \tResult: " + result);
 			
 			if (result.equals(Result.PLAYER1_HAS_WON))
 				player1Won++;
@@ -38,7 +38,7 @@ public class PlayAGame {
 		sb.append("DRAW:     \t\t " + draw + " ");
 		
 		System.out.println(sb.toString());
-		System.out.println(interactions.toString());
+		System.out.println(iterations.toString());
 		
 		
 

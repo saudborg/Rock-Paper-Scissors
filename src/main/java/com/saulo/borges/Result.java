@@ -2,7 +2,9 @@ package com.saulo.borges;
 
 public enum Result {
 	
-	PLAYER1_HAS_WON(1, "Player 1 has won"), DRAW (0 , "Draw"), PLAYER2_HAS_WON (-1, "Player 1 has lost");
+	PLAYER1_HAS_WON(1, "Player 1 has won"), //
+	DRAW (0 , "Draw"), //
+	PLAYER2_HAS_WON (-1, "Player 1 has lost");
 	
 	private int value;
 	
